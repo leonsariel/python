@@ -1,1 +1,20 @@
-hello
+git init
+用于已经建立了一个dic然后要用这个dic为git repo
+
+touch fileName
+新建一个文件
+
+git config --global user.name 'yourname'
+git config --global user.email 'your email'
+setup认证你的用户名和邮箱
+
+git add fileName
+add改变过的文件
+
+git status
+查看状态，有没有modifed的
+
+git rm --cached fileName
+remove file from add pool
+
+
