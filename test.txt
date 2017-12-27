@@ -17,4 +17,22 @@ git status
 git rm --cached fileName
 remove file from add pool
 
+git config --global core.editor "'c:/program files/sublime text 3/subl.exe' -w"
+用sublime text 做commit text editor
 
+git commit -m "直接commit,不打开editor"
+
+git touch .gitignore
+添加目录到这个文件夹，git add 会忽略变化
+
+git branch bName
+新建一个branch
+
+git checkout bName
+进入branch
+
+git merge bName
+merge连个branch
+
+git remote add origin URLs
+add to remote repos
