@@ -14,8 +14,8 @@ import requests
 
 # Obtain a database connection to the MySQL instance
 db_host = 'localhost'
-db_user = 'sec_user'
-db_pass = 'password'
+db_user = 'root'
+db_pass = ''
 db_name = 'securities_master'
 con = mdb.connect(db_host, db_user, db_pass, db_name)
 

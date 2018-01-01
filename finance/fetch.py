@@ -1,17 +1,22 @@
-import MySQLdb
+from __future__ import print_function
 
-db = MySQLdb.connect("localhost","root","","securities_master")
 
-cursor = db.cursor()
+import datetime
+import statsmodels as ts
+from pandas_datareader import data
 
-# cursor.execute("DROP TABLE IF EXISTS EMPLOYEE")
+amzn = data.DataReader(
+    "AMZN", "yahoo",
+    datetime.datetime(2007,1,1),
+    datetime.datetime(2007,2,1)
+)
 
-sql = """CREATE TABLE EMPLOYEE (
-         FIRST_NAME  CHAR(20) NOT NULL,
-         LAST_NAME  CHAR(20),
-         AGE INT,
-         SEX CHAR(1),
-         INCOME FLOAT)"""
-cursor.execute(sql)
 
-db.close()
+print(amzn.tail())
+ts.adfuller(amzn['Adj Close'],1)
+
+#
+# db = MySQLdb.connect("localhost","root","","securities_master")
+# cursor = db.cursor()
+# db.close()
+

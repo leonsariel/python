@@ -7,7 +7,7 @@ import pandas.io.data as web
 import pprint
 import statsmodels.tsa.stattools as ts
 
-from pandas.stats.api import ols
+from pandas.stats.api import
 
 
 def plot_price_series(df, ts1, ts2):

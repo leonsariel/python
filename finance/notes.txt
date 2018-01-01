@@ -1,0 +1,13 @@
+用pandas调用历史价格数据
+1. pip install pandas
+2. pip install pandas-datareader
+
+example:
+
+from pandas_datareader import data
+import datetime as dt
+ticker = 'GLD'
+begdate = '2014-11-11'
+enddate = '2016-11-11'
+data1 = data.DataReader(ticker,'yahoo',dt.datetime(2014,11,11),dt.datetime(2016,11,11))
+
