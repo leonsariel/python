@@ -1,0 +1,13 @@
+1. cross validation
+    eg. seprate the data into test and training set
+
+2. better way to do cross validation
+    a. make 70% - 30% for n groups
+    b. use model to learn
+    c. get average of results from n groups
+
+3. get scores
+    do not need fit to have scores
+    find a range of best prarameters from plots, not a single number eg. k(3,9)
+    eg. scores = cross_val_score(knn, x, y, cv=10, scoring='accuracy')  // for classification
+        scores = -cross_val_score(knn, x, y, cv=10, scoring='mean_squared_error')  // for regression, need - scores is negative. the less the better.
