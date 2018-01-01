@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection
 from six.moves.urllib.request import urlopen
 from six.moves.urllib.parse import urlencode
-import sklearn
+import ml
 
 print(__doc__)
 
