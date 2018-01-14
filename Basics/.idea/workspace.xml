@@ -14,6 +14,8 @@
     <SUITE FILE_PATH="coverage/Basics$np_example.coverage" NAME="np_example Coverage Results" MODIFIED="1515887836274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/np_and_pandas" />
     <SUITE FILE_PATH="coverage/Basics$np_array.coverage" NAME="np_array Coverage Results" MODIFIED="1515888693409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/np_and_pandas" />
     <SUITE FILE_PATH="coverage/HardWay_Samples$args_and_kwargs.coverage" NAME="args_and_kwargs Coverage Results" MODIFIED="1515799787772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Basics$np_basic_clculation.coverage" NAME="np_basic_clculation Coverage Results" MODIFIED="1515889857767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/np_and_pandas" />
+    <SUITE FILE_PATH="coverage/Basics$np_matrix.coverage" NAME="np_matrix Coverage Results" MODIFIED="1515890191676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/np_and_pandas" />
     <SUITE FILE_PATH="coverage/HardWay_Samples$test.coverage" NAME="test Coverage Results" MODIFIED="1515794647734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -50,11 +52,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="np_array.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="np_array.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/np_and_pandas/np_array.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
               <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="np_basic_clculation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/np_and_pandas/np_basic_clculation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="np_matrix.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/np_and_pandas/np_matrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -100,6 +122,10 @@
         <option value="$PROJECT_DIR$/args_and_kwargs.py" />
         <option value="$PROJECT_DIR$/np_and_pandas/np_example.py" />
         <option value="$PROJECT_DIR$/np_and_pandas/np_array.py" />
+        <option value="$PROJECT_DIR$/np_and_pandas/basic_clculation.py" />
+        <option value="$PROJECT_DIR$/np_and_pandas/np_basic_clculation.py" />
+        <option value="$PROJECT_DIR$/np_matrix.py" />
+        <option value="$PROJECT_DIR$/np_and_pandas/np_matrix.py" />
       </list>
     </option>
   </component>
@@ -156,6 +182,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git\python\Basics\np_and_pandas" />
       <recent name="C:\git\python\Basics\tests" />
       <recent name="C:\git\python\HardWay Samples\tests" />
     </key>
@@ -172,22 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.np_array">
-    <configuration name="Unittests in test_add_num.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="HardWay Samples" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_add_num.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
+  <component name="RunManager" selected="Python.np_matrix">
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -365,6 +377,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="np_basic_clculation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/np_and_pandas" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Basics" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/np_and_pandas/np_basic_clculation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="np_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,38 +413,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="np_matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/np_and_pandas" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="HardWay Samples" />
+      <module name="Basics" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/np_and_pandas/np_matrix.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_add_num.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.args_and_kwargs" />
-      <item index="3" class="java.lang.String" itemvalue="Python.np_example" />
-      <item index="4" class="java.lang.String" itemvalue="Python.np_array" />
+      <item index="0" class="java.lang.String" itemvalue="Python.args_and_kwargs" />
+      <item index="1" class="java.lang.String" itemvalue="Python.np_example" />
+      <item index="2" class="java.lang.String" itemvalue="Python.np_array" />
+      <item index="3" class="java.lang.String" itemvalue="Python.np_basic_clculation" />
+      <item index="4" class="java.lang.String" itemvalue="Python.np_matrix" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.np_array" />
-        <item index="1" class="java.lang.String" itemvalue="Python.np_example" />
-        <item index="2" class="java.lang.String" itemvalue="Python.args_and_kwargs" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test_add_num.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python.np_matrix" />
+        <item index="1" class="java.lang.String" itemvalue="Python.np_basic_clculation" />
+        <item index="2" class="java.lang.String" itemvalue="Python.np_array" />
+        <item index="3" class="java.lang.String" itemvalue="Python.np_example" />
+        <item index="4" class="java.lang.String" itemvalue="Python.args_and_kwargs" />
       </list>
     </recent_temporary>
   </component>
@@ -612,6 +642,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/np_and_pandas/np_basic_clculation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/np_and_pandas/np_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding />
         </state>
       </provider>
