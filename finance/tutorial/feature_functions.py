@@ -38,7 +38,7 @@ def candles(prices, periods):
     df = pd.concat((open, high, low, close), axis=1)
     df.columns = [['open', 'high', 'close', 'low']]
 
-    # df.index = df.index.dropleve(0)
+    df.index = df.index.droplevel(0)
     dict[periods[0]] = df
 
     results.candles = dict
@@ -82,7 +82,7 @@ def sSeries(x, a0, b1, w):
 def fourier(prices, periods, method='difference'):
     results = holder()
     dict = {}
-    plot = True
+    plot = False
 
     detrended = detrend(prices, method)
     for i in range(0, len(periods)):
@@ -111,7 +111,7 @@ def fourier(prices, periods, method='difference'):
 
             coeffs = np.append(coeffs, res[0], axis=0)
         warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
-        coeffs = np.array(coeffs).reshape(((len(coeffs) / 4, 4)))
+        coeffs = np.array(coeffs).reshape(((int(len(coeffs) / 4), 4)))
         df = pd.DataFrame(coeffs, index=prices.iloc[periods[i]:-periods[i]])
 
         df.columns = [['a0', 'a1', 'b1', 'w']]
@@ -119,6 +119,7 @@ def fourier(prices, periods, method='difference'):
         dict[periods[i]] = df
 
     results.coeffs = dict
+    print(dict)
     return results
 
 
@@ -131,7 +132,7 @@ def sine(prices, periods, method='difference'):
     for i in range(0, len(periods)):
         coeffs = []
         for j in range(periods[i], len(prices) - periods[i]):
-            x = np.arrange(0, periods[i])
+            x = np.arange(0, periods[i])
             y = detrended.iloc[j - periods[i]:j]
 
             with warnings.catch_warnings():
@@ -154,7 +155,8 @@ def sine(prices, periods, method='difference'):
 
             coeffs = np.append(coeffs, res[0], axis=0)
         warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
-        coeffs = np.array(coeffs).reshape(((len(coeffs) / 3, 3)))
+        # print("this is length", len(coeffs))
+        coeffs = np.array(coeffs).reshape(((int(len(coeffs) / 3), 3)))
         df = pd.DataFrame(coeffs, index=prices.iloc[periods[i]:-periods[i]])
 
         df.columns = [['a0', 'b1', 'w']]
@@ -203,9 +205,9 @@ def OHLCresample(DataFrame, TimeFrame, column="ask"):
     if np.any(DataFrame.columns == "Ask"):
         if column == "ask":
             ask = grouped['Ask'].resample(TimeFrame).ohlc()
-            askVol = grouped['AskVol'].resample(TimeFrame).ohlc()
+            volume = grouped['volume'].resample(TimeFrame).ohlc()
             resampled = pd.DataFrame(ask)
-            resampled['AskVol'] = askVol
+            resampled['volume'] = volume
 
         elif column == 'bid':
             bid = grouped['Bid'].resample(TimeFrame).ohlc()
@@ -215,18 +217,18 @@ def OHLCresample(DataFrame, TimeFrame, column="ask"):
         else:
             raise ValueError('Column must be a string Either ask or bid')
 
-    elif np.any(DataFrame.columns == "Close"):
+    elif np.any(DataFrame.columns == "close"):
         open = grouped['open'].resample(TimeFrame).ohlc()
         close = grouped['close'].resample(TimeFrame).ohlc()
         high = grouped['high'].resample(TimeFrame).ohlc()
         low = grouped['low'].resample(TimeFrame).ohlc()
-        askVol = grouped['AskVol'].resample(TimeFrame).count()
+        volume = grouped['volume'].resample(TimeFrame).count()
 
         resampled = pd.DataFrame(open)
         resampled['high'] = high
         resampled['low'] = low
         resampled['close'] = close
-        resampled['AskVol'] = askVol
+        resampled['volume'] = volume
 
     resampled = resampled.dropna()
     return resampled
@@ -311,7 +313,7 @@ def williams(prices, periods):
 # price rate of change
 def proc(prices, periods):
     results = holder()
-    close = {}
+    proc = {}
 
     for i in range(0, len(periods)):
         proc[periods[i]] = pd.DataFrame(
@@ -333,7 +335,7 @@ def adosc(prices, periods):
             C = prices.close.iloc[j + 1]
             H = prices.high.iloc[j - periods[i]:j].max()
             L = prices.low.iloc[j - periods[i]:j].min()
-            V = prices.AskVol.iloc[j + 1]
+            V = prices.volume.iloc[j + 1]
 
             if H == L:
                 CLV = 0
@@ -420,9 +422,9 @@ def slopes(prices, periods):
     for i in range(0, len(periods)):
         ms = []
         for j in range(periods[i], len(prices) - periods[i]):
-            y = prices.hgih.iloc[j - periods[i]:j].values
+            y = prices.high.iloc[j - periods[i]:j].values
             x = np.arange(0, len(y))
-            res = stats.lingregress(x, y=y)
+            res = stats.linregress(x, y=y)
             m = res.slope
             ms = np.append(ms, m)
 
