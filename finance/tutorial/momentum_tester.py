@@ -11,7 +11,7 @@ from plotly import tools
 import plotly.graph_objs as go
 
 #loading our data
-df = pd.read_csv('EURUSD_hours.csv')
+df = pd.read_csv('data/EURUSD_hours.csv')
 df.columns = ['date','open','high','low','close','volume']
 df.date = pd.to_datetime(df.date,format='%d.%m.%Y %H:%M:%S.%f')
 df = df.set_index(df.date)

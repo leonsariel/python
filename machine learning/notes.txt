@@ -1,0 +1,11 @@
+SVM
+
+1. loss function:
+	function to test if the model is fit the actual return properly.
+	eg. L(Y, f(x)) = (Y - f(x))^2
+	we expect the loss function return a smaller number( means better fit)
+
+2. risk function:
+	is the expectation of loss function:
+	need to minimize the average of all loss function returns
+	eg.  avg(L(Yi, f(xi)))

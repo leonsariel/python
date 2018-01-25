@@ -7,7 +7,7 @@ import numpy as np
 from tutorial.feature_functions import *
 
 # load our data
-data = pd.read_csv('data/EURUSD_hours.csv')
+data = pd.read_csv('data/EURUSD_test.csv')
 data.columns = ['Date', 'open', 'high', 'low', 'close', 'volume']
 data = data.set_index(pd.to_datetime(data.Date))
 
@@ -143,5 +143,5 @@ master_frame_cleaned = master_frame.copy()
 master_frame_cleaned = master_frame_cleaned.dropna(axis=1, thresh=threshold)
 master_frame_cleaned = master_frame_cleaned.dropna(axis=0)
 
-master_frame_cleaned.to_csv('data/master_frame.csv')
+master_frame_cleaned.to_csv('data/master_frame2.csv')
 print("complete!")

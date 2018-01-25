@@ -1,11 +1,11 @@
 # _*_ coding: utf-8 _*_
 __author__ = 'Di Meng'
 __date__ = '1/3/2018 9:59 PM'
-
+import threading
 import pandas as pd
 import numpy as np
 from scipy import stats
-import scipy.optimize
+import scipy.optimize 
 from scipy.optimize import OptimizeWarning
 import warnings
 import math
