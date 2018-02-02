@@ -1,0 +1,178 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block title %}Create New CIR{% endblock %}
+
+{% block custom_css %}
+
+    <link href="{% static 'css/application.css' %}" rel="stylesheet">
+    {#    <link href="{% static 'css/vendor.css' %}" rel="stylesheet">#}
+{% endblock %}
+
+
+{% block custom_js %}
+    <script src="{% static 'js/application.js' %} "></script>
+
+    <script src="{% static 'js/jquery-sortable.js' %} "></script>
+
+
+{% endblock %}
+
+{% block content %}
+
+    {#    <div class="row">#}
+    {#        <div class="col-md-12 col-sm-12 col-xs-12">#}
+    {#            <div class="x_panel">#}
+    {#                <div class="x_content">#}
+    {#                    <div class="" role="tabpanel" data-example-id="togglable-tabs">#}
+    {#                        <div id="myTabContent" class="tab-content">#}
+    {#                            <div role="tabpanel" class="tab-pane fade active in" id="tab_content1"#}
+    {#                                 aria-labelledby="home-tab">#}
+    {#                                <div class="row">#}
+    {#                                    <div class="col-md-12 col-sm-12 col-xs-12">#}
+    {#                                        <div class="dashboard_graph">#}
+    {#                                            <div class="row x_title">#}
+    {#                                                <div class="row"></div>#}
+    {#                                                <div class="col-md-6">#}
+    {##}
+    {#                                                </div>#}
+    {#                                            </div>#}
+    {#                                            <div class="col-md-12">#}
+    {#                                                <div class='bootstrap-container'>#}
+    {#                                                    <div id='examples'>#}
+    {#                                                        <div id='nested'>#}
+    {#                                                            <div class='row'>#}
+    {##}
+    {#                                                                <div class='span4'>#}
+    {#                                                                </div>#}
+    {#                                                                <div class='span4'>#}
+    {#                                                                    <h1>waiting list</h1>#}
+    {##}
+    {#                                                                    <ol class='nested_with_switch vertical'>#}
+    {#                                                                        <li>#}
+    {#                                                                            John#}
+    {#                                                                        </li>#}
+    {#                                                                        <li>#}
+    {#                                                                            Rose#}
+    {#                                                                        </li>#}
+    {#                                                                        <li>#}
+    {#                                                                            Ken#}
+    {#                                                                        </li>#}
+    {#                                                                        <li>#}
+    {#                                                                            Nick#}
+    {#                                                                        </li>#}
+    {#                                                                    </ol>#}
+    {#                                                                </div>#}
+    {#                                                                <div class='span4'>#}
+    {#                                                                    <h1>Case Worker list</h1>#}
+    {#                                                                    <ol class='nested_with_switch vertical'>#}
+    {#                                                                        <li>#}
+    {#                                                                            Anna#}
+    {#                                                                            <ol>#}
+    {#                                                                            </ol>#}
+    {#                                                                        </li>#}
+    {#                                                                        <li>#}
+    {#                                                                            Bob#}
+    {#                                                                            <ol>#}
+    {#                                                                            </ol>#}
+    {#                                                                        </li>#}
+    {#                                                                        <li>#}
+    {#                                                                            Denny#}
+    {#                                                                            <ol>#}
+    {#                                                                            </ol>#}
+    {#                                                                        </li>#}
+    {##}
+    {#                                                                    </ol>#}
+    {#                                                                </div>#}
+    {#                                                            </div>#}
+    {#                                                        </div>#}
+    {#                                                    </div>#}
+    {#                                                </div>#}
+    {#                                            </div>#}
+    {#                                        </div>#}
+    {#                                    </div>#}
+    {##}
+    {#                                </div>#}
+    {#                            </div>#}
+    {#                        </div>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+
+    <div class='bootstrap-container'>
+        <div id='examples'>
+            <div id='nested'>
+                <div class='row'>
+                    <div class="span12 example">
+                    </div>
+                    <div class='span4'>
+                    </div>
+                    <div class='span4'>
+                        <h1>waiting list</h1>
+
+                        <ol class='nested_with_switch vertical'>
+                            <li>
+                                John
+                            </li>
+                            <li>
+                                Rose
+                            </li>
+                            <li>
+                                Ken
+                            </li>
+                            <li>
+                                Nick
+                            </li>
+                        </ol>
+                    </div>
+                    <div class='span4'>
+                        <h1>Case Worker list</h1>
+                        <div class='switch-container'>
+                            <div class='switch active' data-off='OFF' data-on='ON' data-toggle='switch'></div>
+                        </div>
+                        <ol class='nested_with_switch vertical'>
+                            <li>
+                                Anna
+                                <ol>
+                                </ol>
+                            </li>
+                            <li>
+                                Bob
+                                <ol>
+                                </ol>
+                            </li>
+                            <li>
+                                Denny
+                                <ol>
+                                </ol>
+                            </li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>var oldContainer;
+    $("ol.nested_with_switch").sortable({
+        group: 'nested',
+        afterMove: function (placeholder, container) {
+            if (oldContainer != container) {
+                if (oldContainer)
+                    oldContainer.el.removeClass("active");
+                container.el.addClass("active");
+
+                oldContainer = container;
+            }
+        },
+        onDrop: function ($item, container, _super) {
+            container.el.removeClass("active");
+            _super($item, container);
+        }
+    });
+
+    $(".switch-container").on("click", ".switch", function (e) {
+        var method = $(this).hasClass("active") ? "enable" : "disable";
+        $(e.delegateTarget).next().sortable(method);
+    });
+    </script>
+{% endblock %}

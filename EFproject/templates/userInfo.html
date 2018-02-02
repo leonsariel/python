@@ -1,0 +1,155 @@
+{% extends 'base.html' %} {% load staticfiles %} {% block title %}Register User Info{% endblock %}
+
+{% block custom_css %}
+{#    <link href="{% static 'css/table.css' %}" media="screen" type="text/css" rel="stylesheet">#}
+{#    <link rel="stylesheet" href="{% static 'wizard/css/normalize.css' %}">#}
+{#    <link rel="stylesheet" href="{% static 'wizard/css/main.css' %}">#}
+    <link rel="stylesheet" href="{% static 'wizard/css/jquery.steps.css' %}">
+{#<link href="{% static 'css/custom.css' %}" media="screen" type="text/css" rel="stylesheet">#}
+
+{% endblock %}
+
+{% block custom_js %}
+    <script src="{% static 'js/jquery-1.8.3.min.js' %} "></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+                    <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Registration Form <small>Click to validate</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <!-- start form for validation -->
+                      <form id="userInfoForm" data-parsley-validate class="form-horizontal form-label-left" method="post">
+                        {% csrf_token %}
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="userFirstName" id="userFirstName" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="userLastName" id="userLastName" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                          <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Post Code<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" name="userPostCode" id="userPostCode"required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Region<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control" name="region">
+                            <option value="Edmonton">Edmonton</option>
+                            <option  value="Calgary">Calgary</option>
+                                <option value="North">North</option>
+                                <option value="South">South</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Site<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control" name="site">
+                                <option value="Calgary 251">Calgary 251</option>
+                                <option value="Edmonton 300">Edmonton 300</option>
+                                <option value="Edmonton 111">Edmonton 111</option>
+                                <option value="North 92">North 92</option>
+                                <option value="South 120">South 120</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Program<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control" name="program">
+                            <option value="OPG">OPG</option>
+                            <option value="OPT">OPT</option>
+                          </select>
+                        </div>
+                      </div>
+
+                          <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Role<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control" name="role">
+                            <option value="Case Worker">Case Worker</option>
+                            <option  value="Supervisor">Supervisor</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Regional Director">Regional Director</option>
+                          </select>
+                        </div>
+                      </div>
+
+                                                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Report To<span >*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control" name="reportTo">
+                                {% for user in users %}
+                                    {% if user.firstName and user.role != "Case Worker"%}
+                                        <option value="{{ user.id }}">{{ user.firstName }} {{ user.lastName }} ({{ user.role }})</option>
+                                    {% endif %}
+                                {% endfor %}
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-1 col-sm-1 col-xs-1 col-md-offset-8">
+
+                          <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+
+                    </form>
+                    <!-- end form for validations -->
+
+                  </div>
+                </div>
+
+</div>
+     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+
+
+
+
+
+
+
+
+{% endblock %}
