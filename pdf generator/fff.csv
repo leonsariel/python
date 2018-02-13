@@ -1,7 +1,7 @@
 Serial No,amount,last_name,first_name,email,phone,company,Signature,VIP
 51,Wang Lili-1-01,Wang,Lili,info@goldmountaintravel.ca,780-425-8899,Cutong,,1
-52,Ma jinshang-1-01,Ma,Jinshang,info@goldmountaintravel.ca,,Cutong,,1
-53,Peng Binghua-1-01,Peng,Binghua,info@goldmountaintravel.ca,,Cutong,,1
+52,Ma jinshang-1-01,Ma,Jinshang,info@goldmountaintravel.ca,780-471-4411,Cutong,,1
+53,Peng Binghua-1-01,Peng,Binghua,info@goldmountaintravel.ca,587-336-1338,Cutong,,1
 54,Fu-1-01,Mr.,Fu,info@goldmountaintravel.ca,,,,1
 55,Kuang Jianmin-1-01,Kuang,Jianmin,info@goldmountaintravel.ca,,Hong Men,,1
 56,Li Wei-1-01,Li,Wei,info@goldmountaintravel.ca,,Kong Zi,,1
@@ -11,20 +11,20 @@ Serial No,amount,last_name,first_name,email,phone,company,Signature,VIP
 60,Guo Changhua-29-04,Guo,Changhua,gch718@163.com,780-478-6652?,Xinyanghong,,1
 61,Guo Changhua-29-05,Guo,Changhua,gch718@163.com,780-478-6652?,Xinyanghong,,1
 62,Guo Changhua-29-06,Guo,Changhua,gch718@163.com,780-478-6652?,Xinyanghong,,1
-63,Guo Changhua-29-07,Fu,Yuqin,fuyuoqin@hotmail.com,?780-439-7835,Xinyanghong,,1
-64,Guo Changhua-29-08,Fu,Yuqin,fuyuoqin@hotmail.com,?780-439-7835,Xinyanghong,,1
-65,Guo Changhua-29-09,Fu,Yuqin,fuyuoqin@hotmail.com,?780-439-7835,Xinyanghong,,1
-66,Guo Changhua-29-10,Fu,Yuqin,fuyuoqin@hotmail.com,?780-439-7835,Xinyanghong,,1
-67,Guo Changhua-29-11,Fu,Yuqin,fuyuoqin@hotmail.com,?780-439-7835,Xinyanghong,,1
-68,Guo Changhua-29-12,Li,Zheng,51386630@qq.com,780-249-6853,Xinyanghong,,1
-69,Guo Changhua-29-13,Li,Zheng,51386630@qq.com,780-249-6853,Xinyanghong,,1
-70,Guo Changhua-29-14,Li,Zheng,51386630@qq.com,780-249-6853,Xinyanghong,,1
-71,Guo Changhua-29-15,Li,Zheng,51386630@qq.com,780-249-6853,Xinyanghong,,1
-72,Guo Changhua-29-16,Li,Zheng,51386630@qq.com,780-249-6853,Xinyanghong,,1
-73,Guo Changhua-29-17,Yin,Xiying,ylmmiao@hotmail.com,780-328-6773,Xinyanghong,,1
-74,Guo Changhua-29-18,Yin,Xiying,ylmmiao@hotmail.com,780-328-6773,Xinyanghong,,1
-75,Guo Changhua-29-19,Pei,Hutang,ylmmiao@hotmail.com,780-328-6773,Xinyanghong,,1
-76,Guo Changhua-29-20,Fu,Yunxia,ylmmiao@hotmail.com,780-328-6773,Xinyanghong,,1
+63,Guo Changhua-29-07,Fu,Yuqin,fuyuqin@hotmail.com,780-439-7835,Xinyanghong,,1
+64,Guo Changhua-29-08,Fu,Yuqin,fuyuqin@hotmail.com,780-439-7835,Xinyanghong,,1
+65,Guo Changhua-29-09,Fu,Yuqin,fuyuqin@hotmail.com,780-439-7835,Xinyanghong,,1
+66,Guo Changhua-29-10,Fu,Yuqin,fuyuqin@hotmail.com,780-439-7835,Xinyanghong,,1
+67,Guo Changhua-29-11,Fu,Yuqin,fuyuqin@hotmail.com,780-439-7835,Xinyanghong,,1
+68,Guo Changhua-29-12,Li,Zheng,513806630@qq.com,780-249-6853,Xinyanghong,,1
+69,Guo Changhua-29-13,Li,Zheng,513806630@qq.com,780-249-6853,Xinyanghong,,1
+70,Guo Changhua-29-14,Li,Zheng,513806630@qq.com,780-249-6853,Xinyanghong,,1
+71,Guo Changhua-29-15,Li,Zheng,513806630@qq.com,780-249-6853,Xinyanghong,,1
+72,Guo Changhua-29-16,Li,Zheng,513806630@qq.com,780-249-6853,Xinyanghong,,1
+73,Guo Changhua-29-17,Yin,Xiying,ylmmail@hotmail.com,780-328-6773,Xinyanghong,,1
+74,Guo Changhua-29-18,Yin,Xiying,ylmmail@hotmail.com,780-328-6773,Xinyanghong,,1
+75,Guo Changhua-29-19,Pei,Hutang,ylmmail@hotmail.com,780-328-6773,Xinyanghong,,1
+76,Guo Changhua-29-20,Fu,Yunxia,ylmmail@hotmail.com,780-328-6773,Xinyanghong,,1
 77,Guo Changhua-29-21,Luan,Jianhua,77191572@qq.com,?780-695-5166,Xinyanghong,,1
 78,Guo Changhua-29-22,Luan,Jianhua,77191572@qq.com,?780-695-5166,Xinyanghong,,1
 79,Guo Changhua-29-23,Zhang,Yuqin,77191572@qq.com,?780-695-5166,Xinyanghong,,1
@@ -70,7 +70,7 @@ Serial No,amount,last_name,first_name,email,phone,company,Signature,VIP
 119,Wang Yifei-6-04,Li,Bo,bo.li@shaw.ca,780-838-0199,Tsinghua,,1
 120,Wang Yifei-6-05,Liu,Lixin,peterliu0716@gmail.com,306-491-0798,Tsinghua,,1
 121,Wang Yifei-6-06,Jiang,Hong,peterliu0716@gmail.com,306-491-0798,Tsinghua,,1
-122,Jimmy Wu-1-01,Wu,Chenghua,WuC17@macewan.ca,,Tsinghua,,1
+122,Jimmy Wu-1-01,Wu,Chenghua,WuC17@macewan.ca,,Cutong,,1
 123,Meng DI-1-01,Meng,Di,dmeng@ualberta.ca,587-336-9286,Cutong,,1
 124,Li Haopu-1-01,Li,Haopu,haopu@ualberta.ca,587-990-5851,Cutong,,1
 125,Liu Jie-4-01,Liu,Jie,yytojj2002@yahoo.com,780-907-6557,Alberta Health,,1
@@ -82,80 +82,73 @@ Serial No,amount,last_name,first_name,email,phone,company,Signature,VIP
 131,Chi Wenrong-14-03,Ma,Jim,jim9888@gmail.com,780-695-1453,Jia Zhong,,1
 132,Chi Wenrong-14-04,Hu,Ping,jim9888@gmail.com,780-695-1453,Jia Zhong,,1
 133,Chi Wenrong-14-05,Ma,Eric,jim9888@gmail.com,780-695-1453,Jia Zhong,,1
-134,Chi Wenrong-14-08,Mah,Susan,gracechi1702@gmail.com,780-459-1268,Jia Zhong,,1
-135,Chi Wenrong-14-09,Mah,Ken,gracechi1702@gmail.com,780-459-1268,Jia Zhong,,1
-136,Chi Wenrong-14-10,Shin,Denise,gracechi1702@gmail.com,780-422-0428,Jia Zhong,,0
-137,Chi Wenrong-14-11,To,Wendy,hkcheung@ualberta.ca,780-446-3237,Jia Zhong,,0
-138,Chi Wenrong-14-12,Gee,Elaine,gracechi1702@gmail.com,780-935-6256,Jia Zhong,,0
-139,Chi Wenrong-14-13,Gee,Ben,gracechi1702@gmail.com,780-935-6256,Jia Zhong,,0
-140,Chi Wenrong-14-14,Woo,Cynthia,hkcheung@ualberta.ca,780-988-6828,Jia Zhong,,0
-141,Chi Wenrong-14-15,Tam,Mandy,hkcheung@ualberta.ca,780-288-1945,Jia Zhong,,0
-142,Chen Leilei-4-01,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
-143,Chen Leilei-4-02,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
-144,Chen Leilei-4-03,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
-145,Chen Leilei-4-04,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
-146,Ma Lin-1-01,Ma,Lin,gracechi1702@gmail.com,,Jia Zhong,,1
-147,Ma Lin-1-01,Ma,Lin,gracechi1702@gmail.com,,Jia Zhong,,1
-148,Jane Cheng-1-01,Cheng,Jane,gracechi1702@gmail.com,,Jia Zhong,,1
-149,Jia Ni-1-01,,Jia Ni,gracechi1702@gmail.com,,Jia Zhong,,1
-150,Zhou Yanyu-01,Zhou,Yanyu,gracechi1702@gmail.com,,Jia Zhong,,1
-151,Zhou Yanyu-02,Munoz,Pablo?,pablomunozmoreno1@gmail.com?,780-680-4215,Jia Zhong,,1
-152,Zhou Yanyu-03,Marambio,Bernardita?,benamarambio@gmail.com,780-680-4215,Jia Zhong,,1
-153,Zhou Yanyu-04,Munoz?,Rosario?,pablomunozmoreno1@gmail.com?,780-680-4215,Jia Zhong,,1
-154,Chi Wenrong-14-06,Cheung,Helen,hkcheung@ualberta.ca,780-975-7787,Jia Zhong,,0
-155,Chi Wenrong-14-07,Cheung,Bill,billcheung@ualberta.ca,780-975-7787,Jia Zhong,,0
-156,Fanmei-01,Xie,Yan,gracechi1702@gmail.com,,Fanmei,,1
-157,Fanmei-02,Xie,Yan,gracechi1702@gmail.com,,Fanmei,,1
-158,Fanmei-03,Yu,Donald,gracechi1702@gmail.com,,Fanmei,,1
-159,Gold Mountain-1-01,Xie,Xian Xun,xianxunxie6684@gmail.com,587-700-6884,N/A,,0
-160,Gold Mountain-1-02,Zheng,Jun De,xianxunxie6684@gmail.com,587-223-0688,Shell Canada Refinary,,0
-161,Gold Mountain-1-03,Xie,Daniel,xianxunxie6684@gmail.com,587-700-6884,N/A,,0
-162,Gold Mountain-1-04,Lin,Zhenyue,lzyueying@gmail.com,780-264-9387,Gold Mountain,,0
-163,Gold Mountain-1-05,BEHIELS,GLEN,behielsgl@shaw.ca,780-485-7113,N/A,,0
-164,Gold Mountain-1-06,BEHIELS,LOUISE,behielsgl@shaw.ca,780-458-7113,N/A,,0
-165,NAIT-1-01,Liu,Enpei,info@goldmountaintravel.ca,,NAIT,,1
-166,Fang Xinxin-1-01,Fang,Xinxin,xinxin.fang@concordia.ab.ca,,concordia-01,,1
-167,Mei Wu,Wu,Mei ,meiwumid@gmail.com,7809340268,,,0
-168,ashley kang,kang,ashley ,ashleymkang@gmail.com,1587501086,,,0
-169,Xinlin Pan,Pan,Xinlin ,xp1229716@gmail.com,7802390476,,,0
-170,Nhieu Ngo, Ngo,Nhieu,ntmachinesltd@gmail.com,7802423452,others,,0
-171,Frank Wang,Wang,Yifei,yfwang02@gmail.com,7806955186,UA,,0
-172,peng xu-1-01,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
-173,peng xu-1-02,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
-174,peng xu-1-03,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
-175,peng xu-1-04,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
+134,Chi Wenrong-14-08,Mah,Susan,SUSANTONGCHIYAN@GMAIL.COM,780-459-1268,Jia Zhong,,1
+135,Chi Wenrong-14-09,Mah,Ken,SUSANTONGCHIYAN@GMAIL.COM,780-459-1268,Jia Zhong,,1
+136,Chi Wenrong-14-10,Shin,Denise,X10ANGEL@SHAW.CA,780-422-0428,Jia Zhong,,1
+137,Chi Wenrong-14-11,To,Wendy,hkcheung@ualberta.ca,780-446-3237,Jia Zhong,,1
+138,Chi Wenrong-14-12,Gee,Elaine,ELAINECHOWGEE@GMAIL.COM,780-935-6256,Jia Zhong,,1
+139,Chi Wenrong-14-13,Gee,Ben,ELAINECHOWGEE@GMAIL.COM,780-935-6256,Jia Zhong,,1
+140,Chi Wenrong-14-14,Woo,Cynthia,hkcheung@ualberta.ca,780-988-6828,Jia Zhong,,1
+141,Chi Wenrong-14-15,Tam,Mandy,hkcheung@ualberta.ca,780-288-1945,Jia Zhong,,1
+142,Chi Wenrong-14-16,Cheung,Helen,hkcheung@ualberta.ca,780-975-7787,Jia Zhong,,1
+143,Chi Wenrong-14-17,Cheung,Bill,billcheung@ualberta.ca,780-975-7787,Jia Zhong,,1
+144,Chen Leilei-4-01,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
+145,Chen Leilei-4-02,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
+146,Chen Leilei-4-03,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
+147,Chen Leilei-4-04,Cheng,Leilei,lchen@ualberta.ca,780-935-9863,Jia Zhong,,1
+148,Zhou Yanyu-01,Zhou,Yanyu,WANGLILY@SHAW.CA,,Jia Zhong,,1
+149,Zhou Yanyu-02,Munoz,Pablo?,pablomunozmoreno1@gmail.com?,780-680-4215,Jia Zhong,,1
+150,Zhou Yanyu-03,Marambio,Bernardita?,benamarambio@gmail.com,780-680-4215,Jia Zhong,,1
+151,Zhou Yanyu-04,Munoz?,Rosario?,pablomunozmoreno1@gmail.com?,780-680-4215,Jia Zhong,,1
+152,Zhou Yanyu-05,Sayaphet,Anita ,sayapheta@gmail.com,780-862-6482,Jia Zhong,,1
+153,Zhou Yanyu-06, Ng,Jason,jasonng125@gmail.com,403-835-5050,Jia Zhong,,1
+154,Zhou Yanyu-07, Lugo,Jose I. Marquez,jose_imarquezlugo@hotmail.com?,7802647751,Jia Zhong,,1
+155,Zhou Yanyu-08,Villegas?,Nancy ,jose_imarquezlugo@hotmail.com?,7809514334,Jia Zhong,,1
+156,Zhou Yanyu-09, Marquez?,Joseph Marvin,jose_imarquezlugo@hotmail.com?,5875669224,Jia Zhong,,1
+157,Zhou Yanyu-10, Ramirez,Marlene Denise,jose_imarquezlugo@hotmail.com?,7802509837,Jia Zhong,,1
+158,Gold Mountain-1-01,Xie,Xian Xun,xianxunxie6684@gmail.com,587-700-6884,N/A,,0
+159,Gold Mountain-1-02,Zheng,Jun De,xianxunxie6684@gmail.com,587-223-0688,Shell Canada Refinary,,0
+160,Gold Mountain-1-03,Xie,Daniel,xianxunxie6684@gmail.com,587-700-6884,N/A,,0
+161,Gold Mountain-1-04,Lin,Zhenyue,lzyueying@gmail.com,780-264-9387,Gold Mountain,,0
+162,Gold Mountain-1-05,BEHIELS,GLEN,behielsgl@shaw.ca,780-485-7113,N/A,,0
+163,Gold Mountain-1-06,BEHIELS,LOUISE,behielsgl@shaw.ca,780-458-7113,N/A,,0
+164,NAIT-1-01,Liu,Enpei,info@goldmountaintravel.ca,,NAIT,,1
+165,Fang Xinxin-1-01,Fang,Xinxin,xinxin.fang@concordia.ab.ca,,concordia-01,,1
+166,Mei Wu,Wu,Mei ,meiwumid@gmail.com,7809340268,,,0
+167,ashley kang,kang,ashley ,ashleymkang@gmail.com,1587501086,,,0
+168,Xinlin Pan,Pan,Xinlin ,xp1229716@gmail.com,7802390476,,,0
+169,Nhieu Ngo, Ngo,Nhieu,ntmachinesltd@gmail.com,7802423452,others,,0
+170,Frank Wang,Wang,Yifei,yfwang02@gmail.com,7806955186,UA,,0
+171,peng xu-1-01,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
+172,peng xu-1-02,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
+173,peng xu-1-03,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
+174,peng xu-1-04,xu,peng ,wanliwushuang@gmail.com,7802982886,UA,,0
+175,Liu lu,Liu lu,,Luokai7@men.com,7802399986,UA,,0
 176,Liu lu,Liu lu,,Luokai7@men.com,7802399986,UA,,0
 177,Liu lu,Liu lu,,Luokai7@men.com,7802399986,UA,,0
-178,Liu lu,Liu lu,,Luokai7@men.com,7802399986,UA,,0
-179,Yytojj,Yytojj,,yytojj2002@yahoo.com,7809076557,UA,,0
-180,Yytojj,Yytojj,,yytojj2002@yahoo.com,7809076557,UA,,0
-181,Yytojj,Yytojj,,yytojj2002@yahoo.com,7809076557,UA,,0
-182,Yytojj,Yytojj,,yytojj2002@yahoo.com,7809076557,UA,,0
-183,Heng Zhu,Heng Zhu,,hengzh47@gmail.com,5878964706,others,,0
-184,Heng Zhu,Heng Zhu,,hengzh47@gmail.com,5878964706,others,,0
-185,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
-186,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
-187,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
-188,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
-189,Ron Horton,Ron Horton,,Chinacanada88@gmail.com,7809532744,others,,1
-190,Ron Horton,Ron Horton,,Chinacanada88@gmail.com,7809532744,others,,1
-191,Anbidid,Anbidid,,anbididevil@gmail.com,7806801482,MacEwan,,0
-192,Jianjun,Jianjun,,Luj245@gmail.com ,7805662198,MacEwan,,0
-193,Jianjun,Jianjun,,Luj245@gmail.com ,7805662198,MacEwan,,0
-194,Jianjun,Jianjun,,Luj245@gmail.com ,7805662198,MacEwan,,0
-195,XiaotianWang,XiaotianWang,,tian939400729@gmail.com,7808078316,MacEwan,,0
-196,XiaotianWang,XiaotianWang,,tian939400729@gmail.com,7808078316,MacEwan,,0
-197,XiaotianWang,XiaotianWang,,tian939400729@gmail.com,7808078316,MacEwan,,0
-198,xian xun xie,xian xun xie,,xianxunxie6684@gmail.com,5877006884,others,,0
-199,zhan ji,zhan ji,,zhanji@ualberta.ca,7806555966,UA,,0
-200,zhan ji,zhan ji,,zhanji@ualberta.ca,7806555966,UA,,0
-201,meng rao,meng rao,,mrao@ualberta.ca,7806956980,UA,,0
-202,416149287,416149287,,416149287@qq.com,7807166348,UA,,0
-203,416149287,416149287,,416149287@qq.com,7807166348,UA,,0
-204,Zifan Zhang,Zifan Zhang,,1468860780@qq.com,5879377202,UA,,0
-205,Zifan Zhang,Zifan Zhang,,1468860780@qq.com,5879377202,UA,,0
-206,Sun Chuanliang,Sun Chuanliang,,chuanlia@ualberta.ca,7807108376,UA,,0
-207,yate Zhang,yate Zhang,,yate@ualberta.ca,4036803651,UA,,0
-208,Xinxin Zhang,Xinxin Zhang,,632557963@qq.com,5879364900,UA,,0
-209,Luo,Luo,Honghuan,info@goldmountaintravel.ca,NA,others,,1
-210,Luo,Gu,Daishan,info@goldmountaintravel.ca,NA,others,,1
+178,Heng Zhu,Heng Zhu,,hengzh47@gmail.com,5878964706,others,,0
+179,Heng Zhu,Heng Zhu,,hengzh47@gmail.com,5878964706,others,,0
+180,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
+181,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
+182,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
+183,sarah Chen,sarah Chen,,sarahchen2000@gmail.com,7808508567,others,,0
+184,Ron Horton,Ron Horton,,Chinacanada88@gmail.com,7809532744,others,,1
+185,Ron Horton,Ron Horton,,Chinacanada88@gmail.com,7809532744,others,,1
+186,Anbidid,Anbidid,,anbididevil@gmail.com,7806801482,MacEwan,,0
+187,Jianjun,Jianjun,,Luj245@gmail.com ,7805662198,MacEwan,,0
+188,Jianjun,Jianjun,,Luj245@gmail.com ,7805662198,MacEwan,,0
+189,Jianjun,Jianjun,,Luj245@gmail.com ,7805662198,MacEwan,,0
+190,XiaotianWang,XiaotianWang,,tian939400729@gmail.com,7808078316,MacEwan,,0
+191,XiaotianWang,XiaotianWang,,tian939400729@gmail.com,7808078316,MacEwan,,0
+192,XiaotianWang,XiaotianWang,,tian939400729@gmail.com,7808078316,MacEwan,,0
+193,zhan ji,zhan ji,,zhanji@ualberta.ca,7806555966,UA,,0
+194,zhan ji,zhan ji,,zhanji@ualberta.ca,7806555966,UA,,0
+195,meng rao,meng rao,,mrao@ualberta.ca,7806956980,UA,,0
+196,zifan zhang,zifan zhang,,416149287@qq.com,7807166348,UA,,0
+197,lorraine lu,lorraine lu,,416149287@qq.com,7807166348,UA,,0
+198,Zifan Zhang,Zifan Zhang,,1468860780@qq.com,5879377202,UA,,0
+199,Zifan Zhang,Zifan Zhang,,1468860780@qq.com,5879377202,UA,,0
+200,Sun Chuanliang,Sun Chuanliang,,chuanlia@ualberta.ca,7807108376,UA,,0
+201,yate Zhang,yate Zhang,,yate@ualberta.ca,4036803651,UA,,0
+202,Xinxin Zhang,Xinxin Zhang,,632557963@qq.com,5879364900,UA,,0
+203,Weitian Ding,Ding,Weitian,info@goldmountaintravel.ca,NA,MacEwan,,1

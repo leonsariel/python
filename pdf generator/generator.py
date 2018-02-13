@@ -41,7 +41,7 @@ def generator(first_name, last_name, email, phone, id, row, pdf, VIP):
 
 
 def generator_VIP(index):
-    pdf = index + " VIP.pdf"
+    pdf = str(index) + ".pdf"
 
     c = canvas.Canvas(pdf, pagesize=landscape(letter))
 
@@ -52,11 +52,11 @@ def generator_VIP(index):
     c.drawCentredString(415, 490, "Hosted by:")
     c.drawCentredString(415, 460, "Edmonton Chinese Unity Association")
     c.drawCentredString(415, 430, "Edmonton Canada China Friendship Society")
-    c.drawCentredString(415, 400, "Edmonton Concodia University")
+    c.drawCentredString(415, 400, "Concordia University of Edmonton")
 
     c.drawCentredString(415, 400, "")
 
-    img = 'ticket_r.jpg'
+    img = 'ticket1.jpg'
 
     c.drawImage(img, 7, 50, width=None, height=None)
     c.showPage()
@@ -102,34 +102,32 @@ def send_email(email, pdf):
     server.quit()
 
 
-# send_list = []
-# for index, row in df.iterrows():
-#     if index >= 28 and index<=53:
-#         VIP = row['VIP']
-#         first_name = str(row['first_name'])
-#         last_name = str(row['last_name'])
-#         email = str(row['email'])
-#         phone = str(row['phone'])
-#         id = str(row['Serial No'])
-#         if email[-1] == "?":
-#             email = email[:-1]
-#         if row['first_name'] == "Munoz":
-#             email = email[:-1]
-#
-#
-#         if first_name[-1] == "?":
-#             first_name = first_name[:-1]
-#         if last_name[-1] == "?":
-#             last_name = last_name[:-1]
-#         if phone[-1] == "?":
-#             phone = phone[:-1]
-#         pdf_name = "e-ticket " + str(id) + ' ' + str(last_name) + '.pdf'
-#         generator(str(first_name), str(last_name), str(email), str(phone), str(id), row, pdf_name, VIP)
-#
-#         send_email(email, pdf_name)
-#         print(index)
-#     if index <28:
-#         continue
+send_list = []
+for index, row in df.iterrows():
 
-for i in range(211, 262):
-    generator_VIP(str(i))
+    VIP = row['VIP']
+    first_name = str(row['first_name'])
+    last_name = str(row['last_name'])
+    email = str(row['email'])
+    phone = str(row['phone'])
+    id = str(row['Serial No'])
+    if email[-1] == "?":
+        email = email[:-1]
+    if row['first_name'] == "Munoz":
+        email = email[:-1]
+
+
+    if first_name[-1] == "?":
+        first_name = first_name[:-1]
+    if last_name[-1] == "?":
+        last_name = last_name[:-1]
+    if phone[-1] == "?":
+        phone = phone[:-1]
+    pdf_name = "e-ticket " + str(id) + ' ' + str(last_name) + '.pdf'
+    generator(str(first_name), str(last_name), str(email), str(phone), str(id), row, pdf_name, VIP)
+
+    # send_email(email, pdf_name)
+    print(index)
+
+
+

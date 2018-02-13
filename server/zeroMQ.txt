@@ -1,0 +1,9 @@
+mt4 include:
+1. copy 2 folders from https://github.com/dingmaotu/mql-zmq/tree/master/Include 
+   into include folder
+   C:\Users\leons\AppData\Roaming\MetaQuotes\Terminal\3294B546D50FEEDA6BF3CFC7CF858DB7\MQL4\Include
+
+2. #include <Zmq/zmq.mqh> in the expert
+3. copy dll in libary(online) to libary fodlers in mt4
+
+4. mt4 enable dll option>expert>enable autotrade & dll
